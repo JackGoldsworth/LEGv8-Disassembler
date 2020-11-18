@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+apply plugin: 'application'
+
+group 'cs.cprarch.pa'
+version '1.0-SNAPSHOT'
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'cs.cprarch.pa.Decompiler'
+        )
+    }
+}
